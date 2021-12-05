@@ -1,60 +1,96 @@
-
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: hsl(217, 54%, 11%);
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    color: hsl(215, 51%, 70%);
-    width: 375px;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  width: 375px;
+  margin: 60px auto;
 }
 
 .nft-component {
-    width: 325px;
-    background-color:hsl(216, 50%, 16%);
-    padding: 25px;
-    margin: 25px;
-    border-radius: 10px;
+  width: 325px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px;
+  margin: 25px;
+  border-radius: 15px;
 }
 
 .nft-artwork img {
-    width: 275px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  width: 275px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.nft-title {
+  margin-bottom: 15px;
 }
 
 .nft-info h1 {
-    color: hsl(0, 0%, 100%);
-    font-weight: 600;
-    font-size: 1.35rem;
-    margin-bottom: 15px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin-bottom: 15px;
 }
 
 .nft-title p {
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 12px;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .nft-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
 }
 
-.nft-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 7px;
+.nft-price,
+.nft-deadline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
 }
 
 .nft-price-text {
-    font-size: 1rem;
-    color: hsl(178, 100%, 50%);
+  font-size: 0.98rem;
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-deadline-text {
+  font-size: 0.96rem;
+}
+
+.nft-info-rule {
+  border: solid thin hsl(215, 32%, 27%);
+  margin-bottom: 15px;
+}
+
+.nft-credit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.nft-credit img {
+    border: solid thin hsl(0, 0%, 100%);
+    border-radius: 100px;
+    width: 32px;
+}
+
+.nft-credit p {
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.nft-credit span {
+    color: hsl(0, 0%, 100%);
 }
